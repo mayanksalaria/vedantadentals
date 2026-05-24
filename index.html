@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VEDANTA-THE DENTAL &amp; IMPLANT CLINIC</title>
+<link rel="icon" type="image/png" href="ico.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2b3234",
+                        "tertiary": "#595c5e",
+                        "on-surface": "#161d1f",
+                        "outline": "#6e797a",
+                        "on-secondary-fixed-variant": "#005322",
+                        "surface-container": "#e8eff1",
+                        "inverse-primary": "#72d5df",
+                        "secondary": "#006d2f",
+                        "surface-container-low": "#eef5f7",
+                        "surface": "#f4fafd",
+                        "primary": "#00666d",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#f5feff",
+                        "secondary-fixed-dim": "#3de273",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#72d5df",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#004f55",
+                        "tertiary-fixed-dim": "#c4c7c8",
+                        "background": "#f4fafd",
+                        "on-background": "#161d1f",
+                        "surface-dim": "#d4dbdd",
+                        "surface-variant": "#dde4e6",
+                        "primary-fixed": "#8ff2fc",
+                        "on-tertiary-fixed": "#191c1d",
+                        "inverse-on-surface": "#ebf2f4",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#3e494a",
+                        "on-primary-fixed": "#002022",
+                        "primary-container": "#00818a",
+                        "surface-tint": "#006970",
+                        "surface-container-high": "#e2e9ec",
+                        "on-tertiary-fixed-variant": "#444748",
+                        "surface-container-highest": "#dde4e6",
+                        "surface-bright": "#f4fafd",
+                        "tertiary-container": "#727576",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bdc9ca",
+                        "on-tertiary-container": "#fbfdfe",
+                        "on-secondary-fixed": "#002109",
+                        "on-secondary-container": "#007232",
+                        "secondary-fixed": "#66ff8e",
+                        "secondary-container": "#5dfd8a",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#e1e3e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap-mobile": "64px",
+                        "gutter": "24px",
+                        "container-max-width": "1200px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-xl": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-sm": ["Hanken Grotesk"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.fill { font-variation-settings: 'FILL' 1; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-4 max-w-container-max-width mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined fill text-primary">dentistry</span>
+                Vedanta Dental Clinic
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#testimonials">Testimonials</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</div>
+<a href="https://wa.me/918899487385" target="_blank" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all active:scale-95 shadow-sm hidden md:flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                Book on WhatsApp
+            </a>
+<button id="mobile-menu-btn" class="md:hidden text-on-surface focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Container -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/30 px-6 py-4 flex-col gap-4 shadow-lg absolute w-full top-full left-0">
+    <a class="text-primary font-bold block py-2" href="#home">Home</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#services">Services</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#testimonials">Testimonials</a>
+    <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 block py-2" href="#contact">Contact</a>
+    <a href="https://wa.me/918899487385" target="_blank" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all active:scale-95 shadow-sm flex items-center justify-center gap-2 mt-2">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        Book via WhatsApp
+    </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop px-6 max-w-container-max-width mx-auto flex flex-col-reverse md:flex-row items-center gap-12" id="home">
+<div class="flex-1 flex flex-col gap-6 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 w-fit mx-auto md:mx-0">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Accepting New Patients</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">
+                VEDANTA <span class="text-primary block">THE DENTAL &amp; IMPLANT CLINIC</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Experience world-class dental care in Janipur with Dr. Shikha Parihar. Professional, polite, and advanced painless treatments tailored for your family.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-4 justify-center md:justify-start">
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-3.5 rounded-lg font-label-sm text-label-sm hover:bg-[#20bd5a] transition-all active:scale-95 shadow-lg shadow-[#25D366]/20" href="https://wa.me/918899487385" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                    Book via WhatsApp
+                </a>
+<a class="w-full sm:w-auto flex items-center justify-center gap-2 border border-primary text-primary px-8 py-3.5 rounded-lg font-label-sm text-label-sm hover:bg-primary/5 transition-all active:scale-95" href="tel:08899487385">
+<span class="material-symbols-outlined">call</span>
+                    Call Now: 08899487385
+                </a>
+</div>
+<div class="flex items-center gap-6 mt-8 justify-center md:justify-start border-t border-outline-variant/30 pt-8">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">5.0</span>
+<div class="flex text-[#FFB400]">
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+<span class="material-symbols-outlined fill text-[18px]">star</span>
+</div>
+</div>
+<div class="h-10 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Patient Satisfaction</span>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full max-w-md mx-auto relative">
+<div class="absolute inset-0 bg-primary/10 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10"></div>
+<img alt="Dr. Shikha Parihar at Vedanta Dental Clinic" class="w-full h-auto rounded-[2rem] object-cover shadow-sm border border-outline-variant/20 aspect-[4/5]" src="hero.png"/>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface p-4 rounded-xl shadow-lg border border-outline-variant/20 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary fill">verified</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface">Dr. Shikha Parihar</p>
+<p class="font-body-md text-[12px] text-on-surface-variant">Expert Family Dentist</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Highlights / Services -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest border-y border-outline-variant/20" id="services">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Excellence in Dental Care</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">We combine advanced clinical protocols with a gentle touch to provide the highest standard of dental wellness treatments.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Highlight 1 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">vaccines</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Painless RCT</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">Utmost care and seamless execution during root canal procedures ensuring completely smooth and painless recovery.</p>
+</div>
+<!-- Highlight 2 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">surgical</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Implants &amp; Braces</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">Professional alignment and structural replacements with comprehensive diagnostics and friendly patient support.</p>
+</div>
+<!-- Highlight 3 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">biotech</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Hygiene Maintained</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">A super pristine, sanitised environment using top-of-the-line clinical tools for safe treatments.</p>
+</div>
+<!-- Highlight 4 -->
+<div class="bg-surface p-6 rounded-xl border border-outline-variant/30 hover:border-primary/30 hover:shadow-sm transition-all group">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">sentiment_very_satisfied</span>
+</div>
+<h3 class="font-label-sm text-label-sm text-on-surface mb-2">Patient-Centric Focus</h3>
+<p class="font-body-md text-[14px] text-on-surface-variant">Highly-recommended personalized consultation, clear problem explanation, and comfortable family appointments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface" id="testimonials">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Patient Reviews</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Verified Google Reviews left by satisfied patients treated at Vedanta Dental Clinic.</p>
+</div>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-6 pb-8 snap-x">
+<!-- Review 1 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-tertiary/5 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"I recently visited Vedanta Dental Clinic, and I had an excellent experience. Dr Shikha Parihar is very polite, patient, and professional. The doctor explained everything clearly and treated my dental issue with great care."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">YR</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Yuv Raj Raina</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">General Treatment</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-tertiary/5 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"I had a great experience with Dr. Shikha. She is very professional, polite, and explains everything clearly. The treatment was painless and comfortable. Highly recommended💯"</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">AP</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Amit Parihar</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Painless Dental Care</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-tertiary/5 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"One of the best dental docter which I know....At her clinic ull get proper treatment nd helpful advice which ll be v important to u nd for ur loved ones...I myself got best treatment from her so she is now our favorite 😍 family dental"</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">SP</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Sachin Parihar</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Family Dental Care</span>
+</div>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-tertiary/5 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"Dr. Shikha Parihar is incredibly skilled and caring. My root canal, cap, and wisdom tooth extraction were completely smooth and painless. She makes patients feel very comfortable. Highly recommended!”"</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">SS</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">sahil singh</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Root Canal &amp; Extraction</span>
+</div>
+</div>
+</div>
+<!-- Review 5 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-tertiary/5 p-8 rounded-[1rem] border border-outline-variant/20 snap-start flex flex-col justify-between h-full">
+<div>
+<div class="flex text-[#FFB400] mb-6">
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+<span class="material-symbols-outlined fill">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-8 italic">"10/10 I recently got braces from this clinic and my experience has been very good so far. The doctor is professional, friendly, and explains everything clearly. The staff is also polite and helpful."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-primary">KC</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface">Keshav Chouhan</h4>
+<span class="font-body-md text-[12px] text-on-surface-variant">Orthodontic Braces</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Contact Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest border-t border-outline-variant/20" id="contact">
+<div class="max-w-container-max-width mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Contact Info -->
+<div class="flex flex-col gap-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Visit Our Clinic</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We are centrally located in Jammu. Connect with us or drive down to secure a healthy smile.</p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Clinic Address</h4>
+<p class="font-body-md text-on-surface-variant">VEDANTA-THE DENTAL &amp; IMPLANT CLINIC,<br/>Main Stop, near PARTAP SHOWROOM, Pamposh Colony,<br/>Janipur, Jammu, Jammu and Kashmir 180007</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Phone Number</h4>
+<a class="font-body-md text-primary hover:underline" href="tel:08899487385">08899487385</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-sm text-label-sm text-on-surface mb-1">Clinic Hours</h4>
+<p class="font-body-md text-on-surface-variant">Mon - Sat: 10:00 AM - 8:00 PM<br/>Sundays: Check Availability / Appointments Only</p>
+</div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/30 flex flex-wrap gap-4">
+<a class="flex-1 min-w-[200px] flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-label-sm text-label-sm hover:bg-[#20bd5a] transition-all" href="https://wa.me/918899487385" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                            WhatsApp Us
+                        </a>
+<a href="tel:08899487385" class="flex-1 min-w-[200px] flex items-center justify-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-[20px]">call</span>
+                            Call Appointment
+                        </a>
+</div>
+</div>
+<!-- Map -->
+<div class="rounded-xl overflow-hidden border border-outline-variant/30 shadow-sm h-[450px] relative bg-surface-container">
+<iframe allowfullscreen="" class="absolute inset-0 grayscale contrast-125 opacity-80 mix-blend-multiply hover:grayscale-0 hover:opacity-100 transition-all duration-500" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.123!2d74.843!3d32.755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AVEDANTA-THE%20DENTAL%20%26%20IMPLANT%20CLINIC!5e0!3m2!1sen!2sin!4v1779613419302!5m2!1sen!2sin" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest w-full py-12 mt-auto border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-6 max-w-container-max-width mx-auto">
+<div class="flex flex-col gap-4">
+<a class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2" href="#">
+<span class="material-symbols-outlined fill text-primary">dentistry</span>
+                    Vedanta Clinic
+                </a>
+<p class="font-body-md text-on-surface-variant max-w-xs">Providing standard-setting dental wellness and operational dental aesthetics in Jammu with advanced practices.</p>
+</div>
+<div class="flex flex-col gap-3 md:pl-12">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-2">Quick Links</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="https://www.instagram.com/dr_shikhaparihar/" target="_blank">Instagram Profile</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4 items-start md:items-end">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider mb-2">Connect With Us</h4>
+<a class="w-10 h-10 rounded-full bg-surface border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="https://www.instagram.com/dr_shikhaparihar/" target="_blank">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-6 mt-12 pt-6 border-t border-outline-variant/30 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2026 VEDANTA-THE DENTAL &amp; IMPLANT CLINIC. All rights reserved.</p>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1" onclick="window.scrollTo(0,0)">
+                Back to top <span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</button>
+</div>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    // Toggle menu visibility
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+    });
+
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('flex');
+        });
+    });
+</script>
+</body></html>
